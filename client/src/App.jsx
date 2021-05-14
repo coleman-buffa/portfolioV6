@@ -3,6 +3,7 @@ import Topbar from './components/topbar/topbar';
 import Intro from './components/intro/intro';
 import Portfolio from './components/portfolio/portfolio';
 import Contact from './components/contact/contact';
+import Menu from './components/menu/menu';
 import './app.scss';
 
 function App() {
@@ -11,6 +12,7 @@ const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu />
       <div className="sections">
         <Intro />
         <Portfolio />
