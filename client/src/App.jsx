@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Topbar from './components/topbar/topbar';
 import Intro from './components/intro/intro';
 import Portfolio from './components/portfolio/portfolio';
+import Works from './components/works/works';
 import Contact from './components/contact/contact';
 import Menu from './components/menu/menu';
 import './app.scss';
@@ -16,6 +17,7 @@ const [menuOpen, setMenuOpen] = useState(false);
       <div className="sections">
         <Intro />
         <Portfolio />
+        <Works />
         <Contact />
       </div>
 
