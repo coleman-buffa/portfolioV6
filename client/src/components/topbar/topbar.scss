@@ -75,6 +75,7 @@
     color: white;
 
     .hamburger {
+      overflow: hidden;
       span {
         &:first-child {
           background-color: white;
