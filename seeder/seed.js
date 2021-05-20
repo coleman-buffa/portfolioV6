@@ -14,7 +14,8 @@ let projectSeed = [
     image_link: "./images/deep-thoughts.gif",
     repo_link: "https://github.com/coleman-buffa/aws-thought",
     deployed_link: "http://184.169.218.40/",
-    skills: ["DynamoDB", "Express.js", "React.js", "Node.js", "AWS S3, AWS EC2"]
+    skills: ["DynamoDB", "Express.js", "React.js", "Node.js", "AWS S3", "AWS EC2"],
+    category: "featured",
   },
   {
     title: "Media Plug",
@@ -22,7 +23,8 @@ let projectSeed = [
     image_link: "./images/media-plug.gif",
     repo_link: "https://github.com/coleman-buffa/media-plug",
     deployed_link: "https://media-plug.herokuapp.com/",
-    skills: ["MySQL", "Express.js", "React.js", "Node.js", "Material-UI", "Auth0"]
+    skills: ["MySQL", "Express.js", "React.js", "Node.js", "Material-UI", "Auth0"],
+    category: "featured",
   },
   {
     title: "Book Reactor",
@@ -30,7 +32,8 @@ let projectSeed = [
     image_link: "./images/book-reactor.gif",
     repo_link: "https://github.com/coleman-buffa/react-books",
     deployed_link: "https://book-reactor.herokuapp.com/search",
-    skills: ["MongoDB", "Express.js", "React.js", "Node.js", "Bulma"]
+    skills: ["MongoDB", "Express.js", "React.js", "Node.js", "Bulma"],
+    category: "web",
   },
   {
     title: "Mineral Mania",
@@ -38,7 +41,8 @@ let projectSeed = [
     image_link: "./images/mineral-mania.gif",
     repo_link: "https://github.com/coleman-buffa/click-game",
     deployed_link: "https://coleman-buffa.github.io/click-game/",
-    skills: ["React.js", "Node.js", "Bootstrap"]
+    skills: ["React.js", "Node.js", "Bootstrap"],
+    category: "web",
   },
   {
     title: "Fitness Tracker",
@@ -46,7 +50,8 @@ let projectSeed = [
     image_link: "./images/fitness-tracker.gif",
     repo_link: "https://github.com/coleman-buffa/fitness-tracker",
     deployed_link: "https://cryptic-woodland-44713.herokuapp.com/",
-    skills: ["MongoDB", "Express.js", "Node.js", "Mongoose"]
+    skills: ["MongoDB", "Express.js", "Node.js", "Mongoose"],
+    category: "web",
   },
   {
     title: "Party X",
@@ -54,7 +59,8 @@ let projectSeed = [
     image_link: "./images/party-x.gif",
     repo_link: "https://github.com/coleman-buffa/Project-2",
     deployed_link: "https://party-x.herokuapp.com/",
-    skills: ["MySQL", "Express.js", "Node.js", "Passport.js", "Sequelize"] 
+    skills: ["MySQL", "Express.js", "Node.js", "Passport.js", "Sequelize"],
+    category: "web",
   },
   {
     title: "BurritoZilla",
@@ -62,7 +68,7 @@ let projectSeed = [
     image_link: "./images/burrito-time.gif",
     repo_link: "https://github.com/coleman-buffa/burrito-time",
     deployed_link: "https://burritozilla.herokuapp.com/",
-    skills: ["MySQL", "Express.js", "Node.js", "Express Handlebars"]
+    skills: ["MySQL", "Express.js", "Node.js", "Express Handlebars"],
   }
 ];
 

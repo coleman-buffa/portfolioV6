@@ -12,6 +12,18 @@ router.get("/project/all/", (req, res) => {
     });
 });
 
+router.get("/project/:category", (req, res) => {
+  Project.find({
+    category: req.params.category
+  })
+  .then(data => {
+    res.json(data);
+  })
+  .catch(err => {
+    res.json(err)
+  });
+});
+
 router.get("/skills/all", (req, res) => {
   //Query for all skills associated with all projects
   Project.find({})

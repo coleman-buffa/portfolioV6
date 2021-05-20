@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PortfolioList from '../portfolioList/portfolioList';
 import './portfolio.scss';
 import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, contentPortfolio, } from '../../data';
+import API from '../../utils/API';
 
 export default function Portfolio() {
 
@@ -12,31 +13,15 @@ export default function Portfolio() {
     {
       id: "featured",
       title: "Featured",
-      key: 1,
     },
     {
       id: "web",
       title: "Web App",
-      key: 2,
-
     },
     {
-      id: "mobile",
-      title: "Mobile App",
-      key: 3,
-
-    },
-    {
-      id: "design",
-      title: "Design",
-      key: 4,
-
-    },
-    {
-      id: "content",
-      title: "Content",
-      key: 5,
-    },
+      id: "miscmobile",
+      title: "Misc",
+    },   
   ];
 
   useEffect(() => {
