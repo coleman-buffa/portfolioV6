@@ -7,7 +7,6 @@ export default {
   },
   //Get all projects by category
   getProjectsByCategory: function (category) {
-    console.log(category);
     return axios.get("/project/" + category)
   },
   //Scan through project list and create an array that

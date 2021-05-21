@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './works.scss';
 import API from '../../utils/API';
 import { GitHub, WebAsset } from '@material-ui/icons';
+import SkillList from '../skillList/skillList';
 
 export default function Works() {
 
@@ -42,34 +43,40 @@ export default function Works() {
       <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
         {data.map((d) => (
 
-          <div className="container"
-            key={d._id}
-          >
+          <div className="container" key={d._id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
                   <div className="iconContainer">
                     <div>
-                    <a href={d.repo_link}>
-                      <GitHub className="icon"/>
-                    </a>
+                      <a href={d.repo_link}>
+                        <GitHub className="icon" />
+                      </a>
                     </div>
                     <div>
-                    <a href={d.deployed_link}>
-                      <WebAsset className="icon"/>
-                    </a>
+                      <a href={d.deployed_link}>
+                        <WebAsset className="icon" />
+                      </a>
                     </div>
-                    
-                    
-                
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.description}</p>
+                  <div className="skillContainer">
+                    <ul>
+                      {d.skills.map((skill) => (
+                        <SkillList
+                        key={skill}
+                        skill={skill}
+                        />
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div className="right">
                 <img src={d.image_link} alt="" />
               </div>
+
             </div>
           </div>
         ))}

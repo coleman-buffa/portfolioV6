@@ -63,17 +63,19 @@
 
         .left {
           flex: 4;
-          height: 80%;
+          height: 90%;
           display: flex;
           align-items: center;
           justify-content: center;
 
           .leftContainer {
             width: 90%;
-            height: 70%;
+            height: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;  
+            padding: 0 0 0 35px;       
 
             .iconContainer {             
               width: 80px;
@@ -88,7 +90,6 @@
               }
 
               .icon {
-                margin-left: 10px;
                 color: black;
 
                 @include mobile {
@@ -105,16 +106,27 @@
             }
             p {
               font-size: 13px;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+
               @include mobile{
                 display: none;
               }
             }
-            span {
-              font-size: 12px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
-            }
+          }
+
+          .skillContainer {
+            display: flex;
+
+            ul {  
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: center;
+              padding:inherit;
+
+            }  
           }
         }
         .right {
@@ -126,10 +138,11 @@
           overflow: hidden;
 
           img {
-            width: 400px;
-            transform: rotate(-10deg);
+            width: 85%;
           }
         }
+
+
       }
     }
   }
