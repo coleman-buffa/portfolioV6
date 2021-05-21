@@ -35,7 +35,21 @@ export default function Works() {
   ];
 
   const handleClick = (direction) => {
-    direction === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide -1 : 2) : setCurrentSlide(currentSlide < data.length -1 ? currentSlide+1 : 0);
+    if (direction === "left") {
+      if (currentSlide === 0) {
+        setCurrentSlide(data.length - 1)
+      }
+      else {
+        setCurrentSlide(currentSlide - 1);
+      }
+    } else {
+      if (currentSlide === data.length - 1) {
+        setCurrentSlide(0);
+      }
+      else {
+        setCurrentSlide(currentSlide + 1);
+      }
+    }
   }
 
   return (
@@ -61,8 +75,8 @@ export default function Works() {
           </div>
         ))}
       </div>
-      <img src="./assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")}/>
-      <img src="./assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")}/>
+      <img src="./assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")} />
+      <img src="./assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
     </div>
   );
 }
