@@ -19,33 +19,23 @@ export default function Portfolio() {
       title: "Web App",
     },
     {
-      id: "miscmobile",
+      id: "misc",
       title: "Misc",
     },   
   ];
 
   useEffect(() => {
-    switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
-    }
-
+    loadProjectsByCategory(selected);
   }, [selected]);
+
+  const loadProjectsByCategory = (category) => {
+    API.getProjectsByCategory(category)
+    .then(result => {
+      setData(result.data);
+      console.log(data);
+
+    })
+  }
 
   return (
     <div className="portfolio" id='portfolio'>
@@ -57,13 +47,16 @@ export default function Portfolio() {
             active={selected === item.id}
             setSelected={setSelected}
             id={item.id}
+            key={item.title}
           />
         ))}
       </ul>
       <div className="container">
-        {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
+        {data.map((d) => (         
+          <div className="item"
+          key={d._id}
+          >
+            <img src={d.image_link} alt="" />
             <h3>{d.title}</h3>
           </div>
         ))}

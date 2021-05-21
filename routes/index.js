@@ -12,6 +12,7 @@ router.get("/project/all/", (req, res) => {
     });
 });
 
+//Retrieve project list by category
 router.get("/project/:category", (req, res) => {
   Project.find({
     category: req.params.category
