@@ -1,20 +1,31 @@
 import React from 'react';
 import './topbar.scss';
-import { Person, Mail } from '@material-ui/icons'
+import { Description, GitHub, LinkedIn } from '@material-ui/icons';
+import Resume from './colemanbuffa_resume.pdf';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className='logo'>genius.</a>
+          <a href="#intro" className='logo'>developer.</a>
           <div className="itemContainer">
-            <Person className='icon' />
-            <span>(123) 456-7890</span>
+            <a href={Resume}>
+              <Description className='icon' />
+              <span>Resume</span>
+            </a>
           </div>
           <div className="itemContainer">
-            <Mail className='icon' />
-            <span>Random Task</span>
+            <a href="https://github.com/coleman-buffa">
+              <GitHub className='icon' />
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div className="itemContainer">
+            <a href="https://www.linkedin.com/in/coleman-buffa/">
+              <LinkedIn className='icon' />
+              <span>LinkedIn</span>
+            </a>
           </div>
 
         </div>
