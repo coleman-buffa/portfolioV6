@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PortfolioList from '../portfolioList/portfolioList';
 import './portfolio.scss';
-import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, contentPortfolio, } from '../../data';
 import API from '../../utils/API';
 
 export default function Portfolio() {
@@ -32,8 +31,6 @@ export default function Portfolio() {
     API.getProjectsByCategory(category)
     .then(result => {
       setData(result.data);
-      console.log(data);
-
     })
   }
 
@@ -53,9 +50,7 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (         
-          <div className="item"
-          key={d._id}
-          >
+          <div className="item" key={d._id}>
             <img src={d.image_link} alt="" />
             <h3>{d.title}</h3>
           </div>
