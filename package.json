@@ -12,22 +12,22 @@
     "client": "cd client && npm run start",
     "seed": "node seeder/seed.js"
   },
-  "name": "Material-UI Portfolio",
+  "name": "portfolio-server",
   "description": "",
   "version": "1.0.0",
   "main": "server.js",
   "proxy": "http://127.0.0.1:3001/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coleman-buffa/material-ui-portfolio.git"
+    "url": "git+https://github.com/coleman-buffa/portfolioV6.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/coleman-buffa/material-ui-portfolio/issues"
+    "url": "https://github.com/coleman-buffa/portfolioV6/issues"
   },
-  "homepage": "https://github.com/coleman-buffa/material-ui-portfolio#readme",
+  "homepage": "https://github.com/coleman-buffa/portfolioV6",
   "devDependencies": {
     "concurrently": "^6.0.0",
     "nodemon": "^2.0.7"
