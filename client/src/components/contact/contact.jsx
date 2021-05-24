@@ -19,8 +19,10 @@ export default function Contact() {
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Email" />
           <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-          {message && <span>Thanks, I will replay ASAP</span>}
+          <a href="mailto:coleman.buffa@gmail.com">
+            <button type="submit">Send</button>
+          </a>
+          {message && <span>Thanks, I will reply ASAP</span>}
         </form>
       </div>
     </div>
