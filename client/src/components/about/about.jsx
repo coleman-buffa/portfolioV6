@@ -4,8 +4,8 @@ import './about.scss';
 export default function About() {
 
   return (
-    <div>
-      About me!
-    </div>
+    <div className="about" id='about'>
+      About!
+      </div>
   )
 }
