@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import Topbar from './components/topbar/topbar';
 import Intro from './components/intro/intro';
-import Portfolio from './components/portfolio/portfolio';
+import About from './components/about/about';
 import Works from './components/works/works';
-import Contact from './components/contact/contact';
 import Menu from './components/menu/menu';
+import Footer from './components/footer/footer';
 import './app.scss';
 
 function App() {
@@ -16,11 +16,10 @@ const [menuOpen, setMenuOpen] = useState(false);
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
-        <Portfolio />
+        <About />
         <Works />
-        <Contact />
+        <Footer />
       </div>
-
     </div>
   );
 }
