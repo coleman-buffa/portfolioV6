@@ -1,0 +1,18 @@
+@import "../../global.scss";
+
+#about {
+  background-color: white;
+
+  .aboutWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 20px;
+
+    h6 {
+      color: $mainColor;
+    }
+  }
+}
