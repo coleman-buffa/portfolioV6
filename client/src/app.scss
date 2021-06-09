@@ -3,7 +3,7 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 110px);
     background-color: lightsalmon;
     position: relative;
     top: 70px;
@@ -16,7 +16,7 @@
 
     > * {
       width: 100vw;
-      height: calc(100vh - 70px);
+      height: calc(100vh - 110px);
       scroll-snap-align: start;
     }
   }

@@ -18,8 +18,8 @@ const [menuOpen, setMenuOpen] = useState(false);
         <Intro />
         <About />
         <Works />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

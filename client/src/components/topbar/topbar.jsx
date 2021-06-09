@@ -27,12 +27,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
               <span>LinkedIn</span>
             </a>
           </div>
-          <div className="itemContainer">
-            <a>
-              <Drafts className='icon' />
-              <span>coleman.buffa@gmail.com</span>
-            </a>
-          </div>
+
 
         </div>
         <div className="right">
