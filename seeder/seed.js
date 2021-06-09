@@ -27,12 +27,12 @@ let projectSeed = [
     category: "featured",
   },
   {
-    title: "Book Reactor",
-    description: "MERN Stack App using Google Books API",
-    image_link: "./assets/book-reactor.gif",
-    repo_link: "https://github.com/coleman-buffa/react-books",
-    deployed_link: "https://book-reactor.herokuapp.com/search",
-    skills: ["MongoDB", "Express.js", "React.js", "Node.js", "Bulma"],
+    title: "Weather Dashboard",
+    description: "Search to find the current and forecasted weather in a city of your choosing. Previously searched cities are saved to local storage for data persistence.",
+    image_link: "./assets/weather-dashboard.gif",
+    repo_link: "https://github.com/coleman-buffa/weather-dashboard",
+    deployed_link: "https://colemanbuffa-weatherdashboard.herokuapp.com/",
+    skills: ["React.js", "Express.js", "LocalStorage", "Node.js", "Material-UI"],
     category: "web",
   },
   {
@@ -53,24 +53,6 @@ let projectSeed = [
     skills: ["MongoDB", "Express.js", "Node.js", "Mongoose"],
     category: "web",
   },
-  {
-    title: "Party X",
-    description: "Full stack project built with a team",
-    image_link: "./assets/party-x.gif",
-    repo_link: "https://github.com/coleman-buffa/Project-2",
-    deployed_link: "https://party-x.herokuapp.com/",
-    skills: ["MySQL", "Express.js", "Node.js", "Passport.js", "Sequelize"],
-    category: "web",
-  },
-  {
-    title: "BurritoZilla",
-    description: "First full stack application solo build",
-    image_link: "./assets/burrito-time.gif",
-    repo_link: "https://github.com/coleman-buffa/burrito-time",
-    deployed_link: "https://burritozilla.herokuapp.com/",
-    skills: ["MySQL", "Express.js", "Node.js", "Express Handlebars"],
-    category: "web",
-  }
 ];
 
 Projects.deleteMany({})
