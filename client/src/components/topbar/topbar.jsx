@@ -1,6 +1,6 @@
 import React from 'react';
 import './topbar.scss';
-import { Description, GitHub, LinkedIn } from '@material-ui/icons';
+import { Description, GitHub, LinkedIn, Drafts } from '@material-ui/icons';
 import Resume from './colemanbuffa_resume.pdf';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -25,6 +25,12 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <a href="https://www.linkedin.com/in/coleman-buffa/">
               <LinkedIn className='icon' />
               <span>LinkedIn</span>
+            </a>
+          </div>
+          <div className="itemContainer">
+            <a>
+              <Drafts className='icon' />
+              <span>coleman.buffa@gmail.com</span>
             </a>
           </div>
 
