@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './about.scss';
 import { Grid, Paper, Typography } from '@material-ui/core';
+import { DeveloperMode, Language, Gavel } from '@material-ui/icons';
 
 export default function About() {
 
@@ -8,7 +9,10 @@ export default function About() {
     <section className="about" id='about'>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={4}>
+
           <Paper variant="outlines" elevation={3} className="aboutWrapper">
+            <br />
+            <DeveloperMode className="icon" />
             <br />
             <Typography variant="h6">
               Software Engineer
@@ -26,7 +30,6 @@ export default function About() {
             <Typography variant="caption">
               Node.js, Express.js, <br />
               MySQL, MongoDB, DynamoDB, S3 <br />
-
             </Typography>
             <br />
             <Typography variant="h6">
@@ -45,6 +48,8 @@ export default function About() {
         <Grid item xs={12} sm={4}>
           <Paper variant="outlines" elevation={3} className="aboutWrapper">
             <br />
+            <Language className="icon" />
+            <br />
             <Typography variant="h6">
               Web Developer
           </Typography>
@@ -58,18 +63,15 @@ export default function About() {
               Languages I speak
             </Typography>
             <br />
-
             <Typography variant="caption">
               HTML5, CSS3, Sass <br />
               JavaScript, React <br />
             </Typography>
             <br />
-
             <Typography variant="h6">
               Dev Tools
             </Typography>
             <br />
-
             <Typography variant="caption">
               Material Desgin <br />
               Bootstrap <br />
@@ -83,6 +85,8 @@ export default function About() {
         </Grid>
         <Grid item xs={12} sm={4}>
           <Paper variant="outlines" elevation={3} className="aboutWrapper">
+            <br />
+            <Gavel className="icon" />
             <br />
             <Typography variant="h6">
               Geology and Woodwork
@@ -98,29 +102,23 @@ export default function About() {
               Experience
             </Typography>
             <br />
-
             <Typography variant="caption">
               Environmental Consulting <br />
               Professional Luthier <br />
             </Typography>
             <br />
-
             <Typography variant="h6">
               Skills
             </Typography>
             <br />
-
             <Typography variant="caption">
               Systematic problem solver <br />
               Utilize complex toolset <br />
               Constant learner
-
-
             </Typography>
             <br />
           </Paper>
         </Grid>
-
       </Grid>
     </section>
   )
