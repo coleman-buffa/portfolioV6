@@ -9,9 +9,9 @@ export default function Intro() {
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
-      backDelay: 1500,
-      backSpeed: 60,
-      strings: ["Web Developer", "Technology Enthusiast", "Woodworker"],
+      backDelay: 1000,
+      backSpeed: 70,
+      strings: ["Web Developer", "Technology Enthusiast", "Geologist", "Woodworker"],
     });
 
   }, []);
