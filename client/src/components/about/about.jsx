@@ -55,8 +55,9 @@ export default function About() {
           </Typography>
             <br />
             <Typography variant="caption">
-              I like to build big with a <br />
-              healthy dose of collaboration.
+              I like to build projects that <br />
+              stretch me alongside a team of <br />
+              awesome collaborators.
           </Typography>
             <br />
             <Typography variant="h6">
@@ -93,9 +94,9 @@ export default function About() {
           </Typography>
             <br />
             <Typography variant="caption">
-              Earth Scientist and natural <br />
-              historian who appreciates <br />
-              the natural world.
+              Earth Scientist who appreciates <br />
+              the natural world and loves <br />
+              well made things that last.
           </Typography>
             <br />
             <Typography variant="h6">
