@@ -115,6 +115,7 @@ export default function About() {
             <Typography variant="caption">
               Systematic problem solver <br />
               Utilize complex toolset <br />
+              Eye for detail <br />               
               Constant learner
             </Typography>
             <br />
