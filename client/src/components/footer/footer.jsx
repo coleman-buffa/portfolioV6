@@ -6,10 +6,8 @@ export default function Footer() {
 
   return (
     <footer id="footer">
-      <a>
-        <Drafts className='icon' />
-        <span>coleman.buffa@gmail.com</span>
-      </a>
+      <Drafts className='icon' />
+      <span>coleman.buffa@gmail.com</span>
     </footer >
   )
 }

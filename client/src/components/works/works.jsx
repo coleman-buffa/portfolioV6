@@ -39,8 +39,7 @@ export default function Works() {
     <div className="works" id="works">
       <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
         {data.map((d) => (
-
-          <div className="container" key={d._id}>
+          <div className="container" key={d.title}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -73,7 +72,6 @@ export default function Works() {
               <div className="right">
                 <img src={d.image_link} alt="" />
               </div>
-
             </div>
           </div>
         ))}

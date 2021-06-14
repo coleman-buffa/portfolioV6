@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './about.scss';
 import { Grid, Paper, Typography } from '@material-ui/core';
 import { DeveloperMode, Language, Gavel } from '@material-ui/icons';
@@ -10,7 +10,7 @@ export default function About() {
       <Grid container spacing={1}>
         <Grid item xs={12} sm={4}>
 
-          <Paper variant="outlines" elevation={3} className="aboutWrapper">
+          <Paper variant="outlined" elevation={3} className="aboutWrapper">
             <br />
             <DeveloperMode className="icon" />
             <br />
@@ -46,7 +46,7 @@ export default function About() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={4}>
-          <Paper variant="outlines" elevation={3} className="aboutWrapper">
+          <Paper variant="outlined" elevation={3} className="aboutWrapper">
             <br />
             <Language className="icon" />
             <br />
@@ -85,7 +85,7 @@ export default function About() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={4}>
-          <Paper variant="outlines" elevation={3} className="aboutWrapper">
+          <Paper variant="outlined" elevation={3} className="aboutWrapper">
             <br />
             <Gavel className="icon" />
             <br />
