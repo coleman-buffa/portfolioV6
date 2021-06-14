@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './works.scss';
-import API from '../../utils/API';
+import Projects from '../../data';
 import { GitHub, WebAsset } from '@material-ui/icons';
 import SkillList from '../skillList/skillList';
 
@@ -14,10 +14,7 @@ export default function Works() {
   }, []);
 
   const loadProjects = () => {
-    API.getProjects()
-      .then(result => {
-        setData(result.data);
-      })
+    setData(Projects)
   }
 
   const handleClick = (direction) => {
@@ -65,8 +62,8 @@ export default function Works() {
                     <ul>
                       {d.skills.map((skill) => (
                         <SkillList
-                        key={skill}
-                        skill={skill}
+                          key={skill}
+                          skill={skill}
                         />
                       ))}
                     </ul>
